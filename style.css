@@ -3,7 +3,10 @@
 }
 
 body {
+  margin: 0;
   background: #235887;
+  color: blue;
+  font-family: "helvetica neue", 'Times New Roman', Times, serif, Helvetica, sans-serif
 }
 
 #all-contents {
@@ -21,7 +24,7 @@ main {
    }
 
    .sidebar {
-     width: 100%;
+     width: 70%;
    }
 
    .content {
