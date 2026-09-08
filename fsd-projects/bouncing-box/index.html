@@ -79,6 +79,7 @@
         var positionY = 100;
         var speedY = 10;
         var boardHeight = jQuery(window).height();
+        var randNum = Math.random() * 100;
         /**
          * This Function will be called 20 times/second.
          * Each time it is called, it should move the Box to a new location.
@@ -98,7 +99,7 @@
           }if (positionY < 0){
             speedY *= -1
           }
-        }
+        } 
 
         /**
          * This Function will be called each time the box is clicked.
@@ -109,12 +110,14 @@
          */
         function handleBoxClick() {
           changeBoxText(points)
-          positionX = 0;
           points += 1;
           speed += 3;
           speed = 3 * points + 10;
+          var randX = Math.random() * (boardWidth - 150);
+          var randY = Math.random() * (boardHeight - 150);
+          positionX = randX;
+          positionY = randY;
         }
-
 
         
       })();
